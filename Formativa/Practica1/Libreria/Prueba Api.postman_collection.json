@@ -1,0 +1,106 @@
+{
+  "info": {
+    "_postman_id": "125228e4-3988-4f89-9020-1dce6c3ca4ef",
+    "name": "Prueba Api",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53341232",
+    "_collection_link": "https://go.postman.co/collection/53341232-125228e4-3988-4f89-9020-1dce6c3ca4ef?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Crear Producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 2,\r\n    \"precio\": 4000,\r\n    \"nombre\": \"Set lapices pasta\",\r\n    \"categoria\": \"Utiles\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos/1?1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos",
+            "1"
+          ],
+          "query": [
+            {
+              "key": "1",
+              "value": null
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\": 1,\r\n    \"precio\": 2000,\r\n    \"nombre\": \"Lapiz\",\r\n    \"categoria\": \"Utiles\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

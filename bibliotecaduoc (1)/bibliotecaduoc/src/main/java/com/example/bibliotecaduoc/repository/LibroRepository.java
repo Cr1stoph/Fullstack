@@ -17,6 +17,7 @@ public class LibroRepository {
         return listaLibros;
     }
 
+// Busca libros por id
     public Libro buscarPorID(int id){
         for (Libro libro : listaLibros) {
             if(libro.getId() == id){
@@ -25,6 +26,7 @@ public class LibroRepository {
         }
         return null;
     }
+//Busca libro por Isbn
     public Libro buscarPorIsbn(String isbn){
         for (Libro libro : listaLibros) {
             if(libro.getIsbn().equals(isbn)){
