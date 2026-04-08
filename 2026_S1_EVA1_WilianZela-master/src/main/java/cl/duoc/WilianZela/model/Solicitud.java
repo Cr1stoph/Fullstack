@@ -1,0 +1,31 @@
+package cl.duoc.WilianZela.model;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Solicitud {
+    @NotNull(message = "El id no puede ser nulo")
+    private Long id;
+
+    @NotBlank(message = "El nombre del paciente es obligatorio")
+    private String nombrePaciente;
+
+    @NotBlank(message = "La especialidad es obligatoria")
+    private String especialidad;
+
+    @NotBlank(message = "El estado es obligatorio")
+    private String estado;
+
+    @NotNull(message = "La prioridad es obligatoria")
+    private Integer prioridad;
+
+    private LocalDateTime fechaRegistro;
+}

@@ -1,0 +1,13 @@
+package com.example.TareasPendientes;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class TareasPendientesApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
